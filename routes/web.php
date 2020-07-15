@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/wx/token','TestController@getwxToken');
+Route::get('/wx/token2','TestController@getwxToken2');
