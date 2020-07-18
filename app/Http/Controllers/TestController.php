@@ -71,4 +71,23 @@ class TestController extends Controller
         ];
         echo json_encode($data);
     }
+    public function userInfo(){
+        echo 'userinfo';
+    }
+    public function test2(){
+        $url = 'http://www.1911.com/test2';
+        $response = file_get_contents($url);
+        var_dump($response);
+    }
+
+    //接口登录
+    public function login(Request $request){
+//        echo '<pre>';print_r($_POST);echo '</pre>';die;
+        $name = request()->input('name');
+        $email = $request->post('email');
+        $pass = $request->post('pass');
+        $password = $request->input('password');
+
+
+    }
 }
